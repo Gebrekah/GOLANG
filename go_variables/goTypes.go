@@ -72,4 +72,24 @@ func main() {
 
 	fmt.Println(strVar, strVar1)
 
+	// Type conversion
+ 	/*
+	var a int64 = 4
+	var b int = a  // Compiler Error (Cannot use a (type in64) as type int in assignment)
+
+	var c int = 500
+
+	var result = a + c // Compiler Error (Invalid Operation: mismatched types int64 and int)
+	*/
+
+	var a int64 = 4
+	var b int = int(a)  // Explicit Type Conversion
+
+	var c float64 = 6.5
+
+	// Explicit Type Conversion
+	var result = float64(b) + c  // Works
+
+	fmt.Println(a, b, c, result)
+
 }
