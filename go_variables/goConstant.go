@@ -28,7 +28,7 @@ func main() {
 	*/
 	const a = 5 + 7.5 // Valid 12.5
 	const b = 12/5    // Valid 2
-	const c = 'z' + 1 // Valid treated as rune (single quatation character)
+	const c = 'z' + 2 // Valid treated as rune (single quatation character)
 
 	//const d = "Hey" + true // Invalid (untyped string constant and untyped boolean constant are not compatible with each other)
 
