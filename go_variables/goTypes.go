@@ -63,5 +63,13 @@ func main() {
 	
 	// string datatypes
 
+	// Normal String (Can not contain newlines, and can have escape characters like `\n`, `\t` etc)
+	var strVar string = "Strings in Golang are declared either \t using double quotes or back ticks\n"
+
+	// Raw String (Can span multiple lines and displayed as it is. Escape characters are not interpreted)
+	var strVar1 string = `Strings in Golang are declared \b either \n
+    using double quotes or back ticks` // the space from the start counted here and Escape characters don't have any special meaning in raw strings.
+
+	fmt.Println(strVar, strVar1)
 
 }
