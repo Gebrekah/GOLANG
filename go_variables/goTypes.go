@@ -34,4 +34,34 @@ func main() {
 
 	fmt.Println(boolVar, boolVar1) 
 
+	// Complex datatype
+	var complexVar complex64 = 6697.3 + 5231.6786666666i // both real and imaginary parts are of float32 type.
+
+	var complexVar1 complex128 = 567.87 + 213.555i // both real and imaginary parts are of float64 type
+
+	var complexVar2 = 32.5 + 67.56i  // Type inferred as `complex128`
+
+	fmt.Println(complexVar, complexVar1, complexVar2)
+
+	// creating a complex number with variables instead of literals
+
+	var realNum = 45.35
+	var imginaryNum = 32.75
+
+	// var complexNum = realNum + imginaryNum*i // error use complex keyword
+	var complexVar3 = complex(realNum, imginaryNum)
+
+	fmt.Println(complexVar3)
+
+	// Both real and imaginary parts must be of the same floating-point type
+   /*
+	var realNum1 complex64 = 45.35
+	var imginaryNum1 complex128 = 32.75
+
+	var complexVar3 = complex(realNum1, imginaryNum1) // error
+	*/
+	
+	// string datatypes
+
+
 }
