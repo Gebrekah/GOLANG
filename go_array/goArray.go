@@ -28,7 +28,7 @@ func main() {
 	fmt.Println(num2)
 
 	// Letting Go compiler infer the length of the array
-	num3 := [...]int{3, 5, 7, 9, 11, 13, 17}
+	num3 := [...]int{3, 5, 7, 9, 11, 12, 17}
 	fmt.Println(num3)
 
 }
