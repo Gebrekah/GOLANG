@@ -88,4 +88,31 @@ func main() {
 	default:
 		fmt.Println("")
 	}
+
+	// For loop
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	// infinite loop with break statement
+	for {
+
+		fmt.Println("Infinite")
+		break
+	}
+	// While loop using For loop with continue statement
+
+	j := 10
+
+	for j < 25 {
+		fmt.Println(j)
+		if j == 20 {
+			j += 2
+			continue
+		}
+		j += 5
+
+	}
+
 }
