@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 
+	// If control flow statement
 	var num1 int = 10
 
 	if num1%3 == 0 {
@@ -29,5 +30,62 @@ func main() {
 		fmt.Println("Pass")
 	} else {
 		fmt.Println("Fail")
+	}
+
+	// Switch control flow statement
+
+	var num2 = 3
+
+	switch num2 {
+	case 1:
+		fmt.Println(num2)
+	case 2:
+		fmt.Println(num2)
+	case 3:
+		fmt.Println(num2)
+	case 4:
+		fmt.Println(num2)
+	case 5:
+		fmt.Println(num2)
+	default:
+		fmt.Println("Not found")
+	}
+
+	// Switch with a short statement
+
+	switch num3 := 7; num3 {
+	case 1:
+		fmt.Println(num2)
+	case 2:
+		fmt.Println(num2)
+	case 3:
+		fmt.Println(num2)
+	case 4:
+		fmt.Println(num2)
+	case 5:
+		fmt.Println(num2)
+	default:
+		fmt.Println("Not found")
+	}
+
+	// Combining multiple Switch cases
+
+	switch dayOfWeek := 2; dayOfWeek {
+	case 1, 2, 3, 4, 5:
+		fmt.Println("Working days")
+	default:
+		fmt.Println("Weekend")
+	}
+
+	// Switch with no expression # is the same if else if flow statement
+
+	var num3 int8 = 8
+	switch {
+	case num3 > 7:
+		fmt.Println(num3)
+	case num3 <= 7 || num3 > 5:
+		fmt.Println(num3)
+	default:
+		fmt.Println("")
 	}
 }
